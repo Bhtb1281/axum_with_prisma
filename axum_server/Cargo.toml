@@ -1,0 +1,12 @@
+[package]
+name = "axum_server"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+axum = "0.7.5"
+prisma-client-rust = { git = "https://github.com/Brendonovich/prisma-client-rust", features = ["mocking", "tokio"], tag = "0.6.11", version = "0.6.11" }
+serde = { version = "1.0.199", features = ["derive"] }
+tokio = { version = "1.37.0", features = ["full"] }
