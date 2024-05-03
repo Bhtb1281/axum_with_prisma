@@ -1,1 +1,3 @@
-/target
+target
+axum_server/src/prisma/prisma.rs
+prisma/dev.db

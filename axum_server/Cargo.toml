@@ -7,6 +7,6 @@ edition = "2021"
 
 [dependencies]
 axum = "0.7.5"
-prisma-client-rust = { git = "https://github.com/Brendonovich/prisma-client-rust", features = ["mocking", "tokio"], tag = "0.6.11", version = "0.6.11" }
+prisma-client-rust = { git = "https://github.com/Brendonovich/prisma-client-rust", default-features=false, features = ["mocking", "tokio", "sqlite"], tag = "0.6.11", version = "0.6.11" }
 serde = { version = "1.0.199", features = ["derive"] }
 tokio = { version = "1.37.0", features = ["full"] }
